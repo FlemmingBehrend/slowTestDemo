@@ -1,0 +1,31 @@
+@mixin transform_rotate($value) {
+    -ms-transform: rotate($value);
+    -o-transform: rotate($value);
+    -moz-transform: rotate($value);
+    -webkit-transform: rotate($value);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.icon {
+    flex: none;
+    width: 30px;
+    align-self: center;
+}
+
+.product {
+    font-size: large;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.status {
+    margin-top: 4px;
+    margin-right: 4px;
+    @include transform_rotate(-15deg);
+    align-self: center;
+}

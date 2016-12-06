@@ -1,0 +1,24 @@
+@import "./../_constants";
+
+.container {
+    display: flex;
+    font-size: medium;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.price {
+    margin-left: $card-space-left;
+}
+
+.discount {
+    font-size: x-small;
+    margin-left: $card-space-left;
+    margin-right: 30px;
+}
+
+.adjustment {
+    font-size: x-small;
+}

@@ -1,0 +1,8 @@
+<md-card class="stakeholder">
+    <md-card-title class="title">
+        {{stakeholder.name}}, {{stakeholder.id}}, {{stakeholder.eboks_top ? 'tilmeldt eboks' : ''}}
+    </md-card-title>
+    <md-card-content *ngFor="let insurance of insurances">
+        <app-affected-insurance [insurance]="insurance"></app-affected-insurance>
+    </md-card-content>
+</md-card>

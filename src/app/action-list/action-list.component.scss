@@ -1,0 +1,10 @@
+@import './../constants';
+
+.container {
+    display: flex;
+}
+
+.actions {
+    font-size: medium;
+    margin-left: $card-space-left;
+}

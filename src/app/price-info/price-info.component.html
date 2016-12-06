@@ -1,0 +1,8 @@
+<div class="container column">
+    <div class="price">Prisen er {{price.period_prize | currency:'DKK':true:'.2'}}</div>
+    <div class="container">
+        <div class="fill"></div>
+        <div class="discount">Aftalerabat: {{price.agreement_discount | currency:'DKK':true:'.2'}}</div>
+        <div class="adjustment">Regulering: {{price.adjustment_discount | currency:'DKK':true:'.2'}}</div>
+    </div>
+</div>
